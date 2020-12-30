@@ -1,0 +1,62 @@
+html {
+    overflow: hidden;
+}
+body {
+    Margin: 0;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax.wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallax.wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    Background-image: url("https://www.worldofhanszimmer.com/wp-content/uploads/2018/10/03_HansZimmer_Frank_Embacher_Berlin_print_klein-87.jpg");
+    position: absolute;
+    z-index: -1;
+    transform: trnaslateZ(-1px) scale (2);
+}
+
+body {background-color: #2c1e10;}
+
+h1 {color: #ffcc99; text-decoration: underline; text-align: center;}
+h2 {color: #ffb366;}
+h3 {color:#ffb366; font-size: 20px;}
+p, li {color: #ffff99; font-size: 20px; font-style: italic;}
+.bold {font-weight: bold;}
+.p1 {font-family: Papyrus, Georgia, Verdana;}
+.p2 {font-family: "Courier New", Arial, "Times New Roman";}
+.p3 {font-family: "Lucida Handwriting", "Lucida Console", "Arial";}
+.normal {font-variant: normal;}
+.smallcaps {font-variant: small-caps;}
+pre {color: #ffff99; font-size: 20px;}
+#Image1 {display: block; margin-left: auto; margin-right: auto; width: 50%; border: 5px solid rgb(148, 146, 146); color: #ffff99;}
+#Video {border: #ffcc99; background-color: rgb(80, 60, 24); text-align: center;}
+.linkCenter {text-align: Center;}
+a:link {color: #06ff06; background-color: transparent; text-decoration: none;}
+a:visited {color: #aaff00; background-color: transparent; text-decoration: none;}
+a:hover {color: #ff0000; background-color: #ffffff; text-decoration:underline;}
+a:active {color: #ffffff; background-color: transparent; text-decoration:dotted}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
+caption {color:#f5ffe0; font-size: 20px; text-decoration: underline;; font-weight: bold;}
+th, td {
+    border: 2px solid #84ffbf;
+    text-align: left;
+    padding: 8px;
+    color:#ffff99;}
+tbody>tr>:nth-child(even) {
+    background-color: #644f3b;}
